@@ -1,0 +1,20 @@
+body{
+	background-color: #e2e2e2;
+}
+ .container{
+ margin: auto;
+width: 40%;
+background: #A46D80;
+color: #ECDA43;
+}
+.d-flex{
+margin-left: 43%;
+}
+.spinner-border{
+margin-left: 50%;	
+}
+.message{
+color: aqua;
+font-family: sans-serif;
+font-size: 18px;	
+}

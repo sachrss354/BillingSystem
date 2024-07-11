@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/" 
+th:replace="base::layout(~{::section})">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" 
+integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ 
+</head>
+<body>
+
+<section>
+<div class="container p-3">
+       <div class="row">
+          <div class="col-md-6 offset-md-3">
+              <div class="card">
+                 <div class="card-header text-center bg-primary text-white fs-4">
+               <p class="text-uppercase font-weight-bold font-italic mt-3">Customer Registration</p>
+                 </div>
+                 <th:block th:if="${session.msg}">
+                 <p class="text-center text-success fs-4">[[${session.msg}]]</p>
+                 <th:block th:text="${@userServiceImpl.removeSessionmsg()}"></th:block>
+                 </th:block>
+                         <div class="card-body">
+                                <form action="saveUser" method="post">
+                                 <div class="mb-3">
+                                          <lable>Enter User Name</lable>
+                                             <input type="text" name="name" class="form-control">
+                                     </div>
+                                     <div class="mb-3">
+                                          <lable>Enter Email</lable>
+                                             <input type="email" name="email" class="form-control">
+                                     </div>
+                                     <div class="mb-3">
+                                          <lable>Enter Mobile Number</lable>
+                                             <input type="number" name="mobile" class="form-control">
+                                     </div>
+                                     <div class="mb-3">
+                                          <lable>Enter Password</lable>
+                                             <input type="password" name="password" class="form-control">
+                                     </div>
+                                     <button class="btn btn-danger col-md-12 font-weight-bold text-light">Register</button>
+                                </form>
+                        </div>
+               </div>
+          </div>
+       </div>
+</div>
+</section>
+
+</body>
+</html>

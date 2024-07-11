@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/" 
+th:replace="base::layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title>India Pay Bill</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+ integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+</head>
+<body>
+<section id="labels">
+  <div class="container">
+	<div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="dl">
+            <div class="brand">
+                <h2 class="text-uppercase">Discount1</h2>
+            </div>
+            <div class="discount alizarin">30%
+                <div class="type">off</div>
+            </div>
+            <div class="descr">
+                <strong>Mei mucius gloriatur reprimique mollis*.</strong> 
+                Ad sonet perfecto antiopam mei, denique molestie ne has. 
+            </div>
+            <div class="ends">
+                <small>* Conditions and restrictions apply.</small>
+            </div>
+            <div class="coupon midnight-blue">
+                <a id="code1" class="open-code" onclick="displaycode();">Get a code</a>
+                <div id="code-1" class="text-uppercase" style="display:none;"> sadap30</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div  class="dl">
+            <div class="brand">
+              <h2 class="text-uppercase">Discount2</h2>
+            </div>
+            <div class="discount emerald">
+                50%
+                <div class="type">
+                    off
+                </div>
+            </div>
+            <div class="descr text-danger" style="font-size: 20px;">
+                <strong>
+                    ****चार हजार के खरीद पर****<br> 
+                </strong> 
+                ****आपको मिलेगा महाबचत 50 की छुट**** 
+            </div>
+            <div class="ends">
+                <small>
+                   * Conditions and restrictions apply.
+                </small>
+            </div>
+            <div class="coupon midnight-blue">
+                <a id="code2" class="open-code">Get a code</a>
+                <div id="code-2" class="text-uppercase" style="display: none;">
+                     sadap50
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div  class="dl">
+            <div class="brand">
+             <h2 class="text-uppercase">Discount3</h2>
+            </div>
+            <div class="discount peter-river">
+            15%
+                <div class="type">
+                    off
+                </div>
+            </div>
+            <div class="descr">
+                <strong>
+                     Solet consul tractatos ei pro*. 
+                </strong> 
+                Ei mei quot invidunt explicari, placerat percipitur intellegam.
+            </div>
+            <div class="ends">
+                <small>
+                   * Conditions and restrictions apply.
+                </small>
+            </div>
+            <div class="coupon midnight-blue">
+                <a id="code3" class="open-code" >Get a code</a>
+                <div id="code-3" class="text-uppercase" style="display: none;">
+                    sadap15
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div  class="dl">
+            <div class="brand">
+                <h2 class="text-uppercase">Discount4</h2>
+            </div>
+            <div class="discount amethyst">
+                25%
+                <div class="type">
+                    off
+                </div>
+            </div>
+            <div class="descr">
+                <strong>
+                    Cu aliquip persius alterum duo*. 
+                </strong> 
+                Possit equidem disputando usu et, sea invidunt scriptorem in. 
+            </div>
+            <div class="ends">
+                <small>
+                   * Conditions and restrictions apply.
+                </small>
+            </div>
+            <div class="coupon midnight-blue">
+                <a id="code4" class="open-code">Get a code</a>
+                <div id="code-4" style="display: none;" class="text-uppercase">
+                    SADAP25
+                </div>
+            </div>
+          </div>
+        </div>
+	</div>
+  </div>
+</section>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script src="jquery.collapse.js"></script>
+</body>
+</html>

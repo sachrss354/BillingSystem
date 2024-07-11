@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/" 
+th:replace="base::layout(~{::section})">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+ integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ 
+</head>
+<body>
+
+<section class="banner d-flex justify-content-center align-items-center">
+<div class="container text-center">
+<div class="text-center">
+<h1 class="text-uppercase" style="color: #ccff33;font-weight: bold;font-size: 70px;">Welcome to,</h1>
+<marquee scrollamount="10">
+<h1 style="color:#40ff00;font-weight: bold;font-size: 60px">India Bill Pay System</h1>
+</marquee>
+<marquee scrollamount="15">
+<p class="font-weight-bold" style="color:#40ff00;font-size: 30px;">
+Start Collecting your billing in very smarter way. We provide very
+efficient and smarter way of handling Billing.
+</p>
+</marquee>
+<a href="/bill">
+<button class="btn bg-primary btn-lg text-white">Get Start</button></a>
+
+</div>
+</div>
+
+</section>
+
+</body>
+</html>
